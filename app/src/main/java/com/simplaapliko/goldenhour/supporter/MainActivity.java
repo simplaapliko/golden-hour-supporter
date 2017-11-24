@@ -21,7 +21,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.crashlytics.android.Crashlytics;
-import com.crashlytics.android.answers.Answers;
 import com.simplaapliko.goldenhour.supporter.analytics.Analytics;
 import com.simplaapliko.goldenhour.supporter.analytics.AnalyticsStrings;
 import com.simplaapliko.goldenhour.supporter.analytics.FirebaseAnalyticsImpl;
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Fabric.with(this, new Answers());
         Fabric.with(this, new Crashlytics());
         analytics = new FirebaseAnalyticsImpl(this);
         navigator = new MainNavigator(this);
