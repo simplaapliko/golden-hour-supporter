@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+static String computeVersionName(Object globalConfiguration, String suffix) {
+    String versionName = globalConfiguration["androidVersionName"]
+    if (suffix == 'prod') {
+        return versionName
+    } else {
+        return versionName + '-' + suffix
+    }
+}
+
+static String computeApplicationId(Object globalConfiguration, String suffix) {
+    String applicationId = globalConfiguration["androidApplicationId"]
+    if (suffix == 'prod') {
+        return applicationId
+    } else {
+        return applicationId + '.' + suffix
+    }
+}
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+
+        versionCode globalConfiguration["androidVersionCode"]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary= false
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+            //applicationIdSuffix '.debug'
+            versionNameSuffix '-debug'
+            ext.alwaysUpdateBuildId = false
+            multiDexEnabled true
+        }
+    }
+
+    compileOptions {
+        encoding "UTF-8"
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        dev {
+            applicationId computeApplicationId(globalConfiguration, 'dev')
+            versionName computeVersionName(globalConfiguration, 'dev')
+            resConfigs("xxhdpi")
+        }
+        prod {
+            applicationId computeApplicationId(globalConfiguration, 'prod')
+            versionName computeVersionName(globalConfiguration, 'prod')
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':design')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.google.firebase:firebase-core:11.6.0'
+
+    implementation('com.crashlytics.sdk.android:answers:1.4.1@aar') {
+        transitive = true;
+    }
+    implementation('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+
+    implementation 'com.simplaapliko:about:1.0.16'
+
+    testImplementation 'junit:junit:4.12'
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

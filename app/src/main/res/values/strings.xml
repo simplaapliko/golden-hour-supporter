@@ -1,0 +1,33 @@
+<!--
+  ~ Copyright (C) 2017 Oleg Kan
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">Golden Hour Supporter</string>
+
+    <string name="thank_you_message">Simplaapliko appreciates your contribution into continued development and improvements of Golden Hour.\nThank you!</string>
+    <string name="other_ways_to_support_message">Please consider some other ways in which you can support the development of the app</string>
+
+    <string name="join_beta_group_header">Become a Beta Tester</string>
+    <string name="join_beta_group_description">Help to test the upcoming versions of the app.\nAs a beta tester, you\'ll get early access to new features.</string>
+    <string name="rate_golden_hour_header">Leave a review on the Google Play Store</string>
+    <string name="send_feedback_header">Send Feedback</string>
+    <string name="send_feedback_description">Share your ideas, comments or suggestions</string>
+    <string name="translate_header">Translate Golden Hour</string>
+    <string name="translate_description">Contact developer if you would like to translate Golden Hour app to your language</string>
+
+    <string name="unable_to_find_google_play">Unable to find Google Play Store app</string>
+
+</resources>

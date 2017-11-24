@@ -1,0 +1,33 @@
+<!--
+  ~ Copyright (C) 2017 Oleg Kan
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">Golden Hour Supporter</string>
+
+    <string name="thank_you_message">Simplaapliko ценит ваш вклад в дальнейшее развитие и совершенствование Golden Hour.\nСпасибо!</string>
+    <string name="other_ways_to_support_message">Пожалуйста, ознакомьтесь с другими способами, которыми вы можете поддержать разработку приложения.</string>
+
+    <string name="join_beta_group_header">Станьте Бета тестером</string>
+    <string name="join_beta_group_description">Помогите протестировать будущие версии приложения. Как бета-тестер, вы получите ранний доступ к новым функциям.</string>
+    <string name="rate_golden_hour_header">Оставьте отзыв на Google Play Store</string>
+    <string name="send_feedback_header">Отправьте отзыв разработчику</string>
+    <string name="send_feedback_description">Поделитесь вашими идеями или предложениями</string>
+    <string name="translate_header">Переведите приложение</string>
+    <string name="translate_description">Свяжитесь с разработчиком, если вы хотите помочь с переводом на ваш язык</string>
+
+    <string name="unable_to_find_google_play">Приложение Google Play Store не найдено</string>
+
+</resources>

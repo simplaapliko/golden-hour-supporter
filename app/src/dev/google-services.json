@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "372798294015",
+    "firebase_url": "https://golden-hour-supporter-dev.firebaseio.com",
+    "project_id": "golden-hour-supporter-dev",
+    "storage_bucket": "golden-hour-supporter-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372798294015:android:d380798238c295f5",
+        "android_client_info": {
+          "package_name": "com.simplaapliko.goldenhour.supporter.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372798294015-sgn60015g7pbbhke1cla02g5jj9b74b5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6VyBhKd8Xiu6jeDfNniY-YUJ6SBN7VdA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
