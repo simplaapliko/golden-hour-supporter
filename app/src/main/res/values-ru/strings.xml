@@ -15,9 +15,9 @@
   -->
 
 <resources>
-    <string name="app_name">Golden Hour Supporter</string>
+    <string name="app_name">Золотой час - Спонсор</string>
 
-    <string name="thank_you_message">Simplaapliko ценит ваш вклад в дальнейшее развитие и совершенствование Golden Hour.\nСпасибо!</string>
+    <string name="thank_you_message">Simplaapliko ценит ваш вклад в дальнейшее развитие и совершенствование приложения Золотой час.\nСпасибо!</string>
     <string name="other_ways_to_support_message">Пожалуйста, ознакомьтесь с другими способами, которыми вы можете поддержать разработку приложения.</string>
 
     <string name="join_beta_group_header">Станьте Бета тестером</string>
