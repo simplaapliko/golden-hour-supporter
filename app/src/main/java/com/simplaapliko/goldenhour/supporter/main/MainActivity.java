@@ -20,13 +20,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.crashlytics.android.Crashlytics;
 import com.simplaapliko.goldenhour.supporter.R;
 import com.simplaapliko.goldenhour.supporter.analytics.Analytics;
 import com.simplaapliko.goldenhour.supporter.analytics.AnalyticsStrings;
 import com.simplaapliko.goldenhour.supporter.analytics.FirebaseAnalyticsImpl;
-
-import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -37,7 +34,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Fabric.with(this, new Crashlytics());
         analytics = new FirebaseAnalyticsImpl(this);
         navigator = new MainNavigator(this);
 
