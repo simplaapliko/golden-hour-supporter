@@ -14,23 +14,11 @@
  * limitations under the License.
  */
 
-package com.simplaapliko.goldenhour.supporter;
+package com.simplaapliko.goldenhour.supporter.settings;
 
-import android.app.Application;
+public interface Settings {
 
-import com.crashlytics.android.Crashlytics;
+    boolean isFirstLaunch();
 
-import io.fabric.sdk.android.Fabric;
-
-public class App extends Application {
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-
-        Fabric.with(this, new Crashlytics());
-
-        AppInteractor appInteractor = new AppInteractor(this);
-        appInteractor.onAppLaunched();
-    }
+    void setFirstLaunch(boolean isFirstLaunch);
 }
