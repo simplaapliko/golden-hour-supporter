@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package com.simplaapliko.goldenhour.supporter;
+package com.simplaapliko.goldenhour.supporter.utils;
 
 import android.content.Context;
 import android.content.Intent;
 
 import com.simplaapliko.about.util.AppInfo;
 import com.simplaapliko.about.util.Assistant;
+import com.simplaapliko.goldenhour.supporter.R;
 
 import java.util.Locale;
 

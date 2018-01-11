@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.simplaapliko.goldenhour.supporter;
+package com.simplaapliko.goldenhour.supporter.main;
 
 import android.content.Context;
 import android.content.Intent;
@@ -25,6 +25,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.simplaapliko.about.util.Assistant;
+import com.simplaapliko.goldenhour.supporter.R;
+import com.simplaapliko.goldenhour.supporter.utils.SupportProjectUtils;
 
 import java.util.List;
 

@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package com.simplaapliko.goldenhour.supporter;
+package com.simplaapliko.goldenhour.supporter.main;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.crashlytics.android.Crashlytics;
+import com.simplaapliko.goldenhour.supporter.R;
 import com.simplaapliko.goldenhour.supporter.analytics.Analytics;
 import com.simplaapliko.goldenhour.supporter.analytics.AnalyticsStrings;
 import com.simplaapliko.goldenhour.supporter.analytics.FirebaseAnalyticsImpl;
