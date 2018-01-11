@@ -22,11 +22,6 @@ allprojects {
         jcenter()
         maven { url 'https://maven.fabric.io/public' }
     }
-    ext {
-        androidApplicationId = 'com.simplaapliko.goldenhour.supporter'
-        androidVersionCode = 3
-        androidVersionName = "1.0.2"
-    }
 }
 
 task clean(type: Delete) {

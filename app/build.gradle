@@ -1,17 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
 
-static String computeVersionName(Object globalConfiguration, String suffix) {
-    String versionName = globalConfiguration["androidVersionName"]
-    if (suffix == 'prod') {
-        return versionName
-    } else {
-        return versionName + '-' + suffix
-    }
-}
-
-static String computeApplicationId(Object globalConfiguration, String suffix) {
-    String applicationId = globalConfiguration["androidApplicationId"]
+static String computeApplicationId(String suffix) {
+    String applicationId = 'com.simplaapliko.goldenhour.supporter'
     if (suffix == 'prod') {
         return applicationId
     } else {
@@ -20,14 +11,14 @@ static String computeApplicationId(Object globalConfiguration, String suffix) {
 }
 
 android {
-    def globalConfiguration = rootProject.extensions.getByName("ext")
-
     compileSdkVersion 26
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 26
 
-        versionCode globalConfiguration["androidVersionCode"]
+        versionCode 3
+        versionName "1.0.2"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary= false
     }
@@ -58,13 +49,11 @@ android {
 
     productFlavors {
         dev {
-            applicationId computeApplicationId(globalConfiguration, 'dev')
-            versionName computeVersionName(globalConfiguration, 'dev')
+            applicationId computeApplicationId('dev')
             resConfigs("xxhdpi")
         }
         prod {
-            applicationId computeApplicationId(globalConfiguration, 'prod')
-            versionName computeVersionName(globalConfiguration, 'prod')
+            applicationId computeApplicationId('prod')
         }
     }
 }
