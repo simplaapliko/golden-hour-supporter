@@ -60,7 +60,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':design')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.google.firebase:firebase-core:11.8.0'
@@ -70,6 +69,7 @@ dependencies {
     }
 
     implementation 'com.simplaapliko:about:1.0.16'
+    implementation 'com.github.simplaapliko:design:0.6.1@aar'
 
     testImplementation 'junit:junit:4.12'
 

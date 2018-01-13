@@ -64,7 +64,7 @@
                 android:text="@string/other_ways_to_support_message"
                 />
 
-            <com.simplaapliko.design.ListTile
+            <com.simplaapliko.design.widget.MenuItemView
                 android:id="@+id/rate_tile"
                 style="@style/Tile"
                 android:layout_width="match_parent"
@@ -73,7 +73,7 @@
                 app:primaryText="@string/rate_golden_hour_header"
                 />
 
-            <com.simplaapliko.design.ListTile
+            <com.simplaapliko.design.widget.MenuItemView
                 android:id="@+id/beta_group_tile"
                 style="@style/Tile"
                 android:layout_width="match_parent"
@@ -83,7 +83,7 @@
                 app:secondaryText="@string/join_beta_group_description"
                 />
 
-            <com.simplaapliko.design.ListTile
+            <com.simplaapliko.design.widget.MenuItemView
                 android:id="@+id/translate_tile"
                 style="@style/Tile"
                 android:layout_width="match_parent"
@@ -93,7 +93,7 @@
                 app:secondaryText="@string/translate_description"
                 />
 
-            <com.simplaapliko.design.ListTile
+            <com.simplaapliko.design.widget.MenuItemView
                 android:id="@+id/feedback_tile"
                 style="@style/Tile"
                 android:layout_width="match_parent"
