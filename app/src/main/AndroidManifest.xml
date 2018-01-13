@@ -24,7 +24,7 @@
 
     <application
         android:allowBackup="true"
-        android:fullBackupContent="@xml/backup_rules"
+        android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
         android:installLocation="auto"
         android:label="@string/app_name"
