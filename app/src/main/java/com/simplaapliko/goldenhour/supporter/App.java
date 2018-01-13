@@ -29,8 +29,5 @@ public class App extends Application {
         super.onCreate();
 
         Fabric.with(this, new Crashlytics());
-
-        AppInteractor appInteractor = new AppInteractor(this);
-        appInteractor.onAppLaunched();
     }
 }
