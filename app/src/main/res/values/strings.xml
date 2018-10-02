@@ -22,7 +22,7 @@
 
     <string name="join_beta_group_header">Become a Beta Tester</string>
     <string name="join_beta_group_description">Help to test the upcoming versions of the app.\nAs a beta tester, you\'ll get early access to new features.</string>
-    <string name="rate_golden_hour_header">Leave a review on the Google Play Store</string>
+    <string name="rate_golden_hour_header">Rate Golden Hour on Play Store</string>
     <string name="send_feedback_header">Send Feedback</string>
     <string name="send_feedback_description">Share your ideas, comments or suggestions</string>
     <string name="translate_header">Translate Golden Hour</string>

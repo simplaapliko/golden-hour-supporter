@@ -22,7 +22,7 @@
 
     <string name="join_beta_group_header">Станьте Бета тестером</string>
     <string name="join_beta_group_description">Помогите протестировать будущие версии приложения. Как бета-тестер, вы получите ранний доступ к новым функциям.</string>
-    <string name="rate_golden_hour_header">Оставьте отзыв на Google Play Store</string>
+    <string name="rate_golden_hour_header">Оцените приложение Золотой час в Play Store</string>
     <string name="send_feedback_header">Отправьте отзыв разработчику</string>
     <string name="send_feedback_description">Поделитесь вашими идеями или предложениями</string>
     <string name="translate_header">Переведите приложение</string>
